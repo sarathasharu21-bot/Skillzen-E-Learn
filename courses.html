@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - SKILLZEN E-Learn</title>
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SKILLZEN</span>E-Learn
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link active">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" class="login-btn">Student Login</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Courses Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Explore Our Courses</h1>
+            <p>Learn from industry experts and advance your career</p>
+        </div>
+    </section>
+
+    <!-- Course Filters -->
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="courseSearch" placeholder="Search courses...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="development">Development</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="marketing">Marketing</button>
+                    <button class="filter-btn" data-filter="data">Data Science</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="all-courses">
+        <div class="container">
+            <div class="courses-container">
+                <!-- Course 1 -->
+                <div class="course-card" data-category="development">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Web Development">
+                        <span class="course-category">Development</span>
+                        <div class="course-badge">Bestseller</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p>Become a full-stack developer with HTML, CSS, JavaScript, React, Node.js, and MongoDB</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 45 hours</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                            <span><i class="far fa-user"></i> John Doe</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5 (2,340)</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹89.99</span>
+                            <span class="original-price">₹199.99</span>
+                        </div>
+                        <a href="login.html" class="btn btn-block">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card" data-category="data">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Data Science">
+                        <span class="course-category">Data Science</span>
+                        <div class="course-badge">Hot & New</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Data Science & Machine Learning A-Z</h3>
+                        <p>Master Python, Pandas, NumPy, Matplotlib, Scikit-learn, and TensorFlow</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 60 hours</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                            <span><i class="far fa-user"></i> Sarah Chen</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.2 (1,890)</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹99.99</span>
+                            <span class="original-price">₹249.99</span>
+                        </div>
+                        <a href="login.html" class="btn btn-block">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card" data-category="marketing">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Digital Marketing">
+                        <span class="course-category">Marketing</span>
+                    </div>
+                    <div class="course-info">
+                        <h3>Digital Marketing Mastery 2024</h3>
+                        <p>Learn SEO, Social Media Marketing, Google Ads, Email Marketing, and Analytics</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 35 hours</span>
+                            <span><i class="fas fa-signal"></i> All Levels</span>
+                            <span><i class="far fa-user"></i> Mike Johnson</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (3,210)</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹79.99</span>
+                            <span class="original-price">₹149.99</span>
+                        </div>
+                        <a href="login.html" class="btn btn-block">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card" data-category="design">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="UI/UX Design">
+                        <span class="course-category">Design</span>
+                    </div>
+                    <div class="course-info">
+                        <h3>UI/UX Design Fundamentals</h3>
+                        <p>Learn user-centered design principles, wireframing, prototyping, and Figma</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 30 hours</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                            <span><i class="far fa-user"></i> Emily Davis</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.6 (1,540)</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹69.99</span>
+                            <span class="original-price">₹129.99</span>
+                        </div>
+                        <a href="login.html" class="btn btn-block">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card" data-category="business">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Business">
+                        <span class="course-category">Business</span>
+                        <div class="course-badge">Popular</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Business Strategy & Management</h3>
+                        <p>Strategic planning, leadership, project management, and business development</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 40 hours</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                            <span><i class="far fa-user"></i> Robert Wilson</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.3 (2,100)</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹89.99</span>
+                            <span class="original-price">₹179.99</span>
+                        </div>
+                        <a href="login.html" class="btn btn-block">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-card" data-category="development">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="">
+                        <span class="course-category">Development</span>
+                    </div>
+                    <div class="course-info">
+                        <h3>React Native Mobile App Development</h3>
+                        <p>Build iOS and Android apps with React Native, Redux, and Firebase</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 50 hours</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                            <span><i class="far fa-user"></i> Alex Martinez</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (1,780)</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹94.99</span>
+                            <span class="original-price">₹199.99</span>
+                        </div>
+                        <a href="login.html" class="btn btn-block">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Start Learning Today</h2>
+            <p>Join over 50,000 students who have transformed their careers with our courses</p>
+            <a href="login.html" class="btn btn-primary">Get Started For Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>SKILLZEN</span><span style="color: white;">E-Learn</span>
+                    </a>
+                    <p>Master new skills and advance your career with our expert-led courses.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Learning St, Education City</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> support@SKILLZEelearn.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SKILLZEN E-Learn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
